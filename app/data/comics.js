@@ -1,4 +1,4 @@
-{
+var comm6 = {
     "title": "6-Commando",
     "url": "http://www.viciousprint.com/6commando/",
     "scores" : [
@@ -11,11 +11,11 @@
         3,
         4,
         3,
-        -
+        3
     ]
 }
 
-{
+var chirault = {
     "title": "Chirault",
     "url": "http://chirault.sevensmith.net/",
     "scores" : [
@@ -28,11 +28,11 @@
         3,
         4,
         3,
-        -
+        3
     ]
 }
 
-{
+var DDWG = {
     "title": "Damsels Don't Wear Glasses",
     "url": "http://damsels-dont-wear-glasses.com/",
     "scores" : [
@@ -45,11 +45,11 @@
         4,
         5,
         3,
-        -
+        4
     ]
 }
 
-{
+var HoK = {
     "title": "Heart of Keol",
     "url": "http://www.heartofkeol.com/",
     "scores" : [
@@ -62,11 +62,11 @@
         3,
         5,
         3,
-        -
+        3
     ]
 }
 
-{
+var lapse = {
     "title": "Lapse",
     "url": "http://www.lapsecomic.com/",
     "scores" : [
@@ -83,7 +83,7 @@
     ]
 }
 
-{
+var michael = {
     "title": "Michael",
     "url": "http://michaelcomic.com/",
     "scores" : [
@@ -96,11 +96,11 @@
         2,
         4,
         3,
-        -
+        2
     ]
 }
 
-{
+var seamusAbbie = {
     "title": "Seamus and Abbie",
     "url": "http://sombulus.com/",
     "scores" : [
@@ -113,11 +113,11 @@
         2,
         5,
         3,
-        -
+        3
     ]
 }
 
-{
+var sombulus = {
     "title": "Sombulus",
     "url": "http://sombulus.com/",
     "scores" : [
@@ -134,7 +134,7 @@
     ]
 }
 
-{
+var soulsJourney = {
     "title": "Soul's Journey",
     "url": "http://sombulus.com/",
     "scores" : [
@@ -151,9 +151,9 @@
     ]
 }
 
-{
+var suihira = {
     "title": "Suihira: The City of Water",
-    "url": "http://www.suihira.com/,
+    "url": "http://www.suihira.com/",
     "scores" : [
         3,
         3,
