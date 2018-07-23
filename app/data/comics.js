@@ -135,6 +135,23 @@
 }
 
 {
+    "title": "Soul's Journey",
+    "url": "http://sombulus.com/",
+    "scores" : [
+        1,
+        4,
+        2,
+        5,
+        2,
+        2,
+        5,
+        4,
+        3,
+        2
+    ]
+}
+
+{
     "title": "Suihira: The City of Water",
     "url": "http://www.suihira.com/,
     "scores" : [

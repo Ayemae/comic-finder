@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <title>Comic Finder</title>
 </head>
 
@@ -14,96 +16,253 @@
     <form>
         <fieldset id="ques1">
             <p>1. I prefer one-off comic strips to continuous stories.</p>
+            <span>Strongly disagree</span>
             <input type="radio" value="1" name="group1">
             <input type="radio" value="2" name="group1">
-            <input type="radio" value="3" name="group1">
+            <input type="radio" value="3" name="group1" checked="checked">
             <input type="radio" value="4" name="group1">
             <input type="radio" value="5" name="group1">
+            <span>Strongly agree</span>
         </fieldset>
 
         <fieldset id="ques2">
-                <p>2. The more fantastical the worldbuilding, the better.</p>
-                <input type="radio" value="1" name="group2">
-                <input type="radio" value="2" name="group2">
-                <input type="radio" value="3" name="group2">
-                <input type="radio" value="4" name="group2">
-                <input type="radio" value="5" name="group2">
-            </fieldset>
+            <p>2. The more fantastical the worldbuilding, the better.</p>
+            <span>Strongly disagree</span>
+            <input type="radio" value="1" name="group2">
+            <input type="radio" value="2" name="group2">
+            <input type="radio" value="3" name="group2" checked="checked">
+            <input type="radio" value="4" name="group2">
+            <input type="radio" value="5" name="group2">
+            <span>Strongly agree</span>
+        </fieldset>
 
         <fieldset id="ques3">
             <p>3. I prefer stories with a light tone to stories with darker ones.</p>
+            <span>Strongly disagree</span>
             <input type="radio" value="1" name="group3">
             <input type="radio" value="2" name="group3">
-            <input type="radio" value="3" name="group3">
+            <input type="radio" value="3" name="group3" checked="checked">
             <input type="radio" value="4" name="group3">
             <input type="radio" value="5" name="group3">
+            <span>Strongly agree</span>
         </fieldset>
 
         <fieldset id="ques4">
-            <p>4.  My favorite stories are ones that can make me cry.</p>
+            <p>4. My favorite stories are ones that can make me cry.</p>
+            <span>Strongly disagree</span>
             <input type="radio" value="1" name="group4">
             <input type="radio" value="2" name="group4">
-            <input type="radio" value="3" name="group4">
+            <input type="radio" value="3" name="group4" checked="checked">
             <input type="radio" value="4" name="group4">
             <input type="radio" value="5" name="group4">
+            <span>Strongly agree</span>
         </fieldset>
 
         <fieldset id="ques5">
             <p>5. I prefer visuals with a more cartoony feel to ones that lean toward realism.</p>
+            <span>Strongly disagree</span>
             <input type="radio" value="1" name="group5">
-            <input type="radio" value="3" name="group5">
             <input type="radio" value="2" name="group5">
+            <input type="radio" value="3" name="group5" checked="checked">
             <input type="radio" value="4" name="group5">
             <input type="radio" value="5" name="group5">
+            <span>Strongly agree</span>
         </fieldset>
 
         <fieldset id="ques6">
             <p>6. I like stories in which romance features prominently.</p>
+            <span>Strongly disagree</span>
             <input type="radio" value="1" name="group6">
             <input type="radio" value="2" name="group6">
-            <input type="radio" value="3" name="group6">
+            <input type="radio" value="3" name="group6" checked="checked">
             <input type="radio" value="4" name="group6">
             <input type="radio" value="5" name="group6">
+            <span>Strongly agree</span>
         </fieldset>
 
         <fieldset id="ques7">
             <p>7. I avoid content with graphic imagery or excessive violence.</p>
+            <span>Strongly disagree</span>
             <input type="radio" value="1" name="group7">
             <input type="radio" value="2" name="group7">
-            <input type="radio" value="3" name="group7">
+            <input type="radio" value="3" name="group7" checked="checked">
             <input type="radio" value="4" name="group7">
             <input type="radio" value="5" name="group7">
+            <span>Strongly agree</span>
         </fieldset>
 
         <fieldset id="ques8">
             <p>8. I’m okay with plots that are a slow burn if it means the characters get explored in more depth.</p>
+            <span>Strongly disagree</span>
             <input type="radio" value="1" name="group8">
             <input type="radio" value="2" name="group8">
-            <input type="radio" value="3" name="group8">
+            <input type="radio" value="3" name="group8" checked="checked">
             <input type="radio" value="4" name="group8">
             <input type="radio" value="5" name="group8">
+            <span>Strongly agree</span>
         </fieldset>
 
         <fieldset id="ques9">
             <p>9. Great visuals are more important than great writing.</p>
+            <span>Strongly disagree</span>
             <input type="radio" value="1" name="group9">
             <input type="radio" value="2" name="group9">
-            <input type="radio" value="3" name="group9">
+            <input type="radio" value="3" name="group9" checked="checked">
             <input type="radio" value="4" name="group9">
             <input type="radio" value="5" name="group9">
-        </fieldset>]
+            <span>Strongly agree</span>
+        </fieldset>
 
         <fieldset id="ques10">
-                <p>10. I need a lot of action or humor to stay invested.</p>
-                <input type="radio" value="1" name="group10">
-                <input type="radio" value="2" name="group10">
-                <input type="radio" value="3" name="group10">
-                <input type="radio" value="4" name="group10">
-                <input type="radio" value="5" name="group10">
-            </fieldset>
+            <p>10. I need a lot of action or humor to stay invested.</p>
+            <span>Strongly disagree</span>
+            <input type="radio" value="1" name="group10">
+            <input type="radio" value="2" name="group10">
+            <input type="radio" value="3" name="group10" checked="checked">
+            <input type="radio" value="4" name="group10">
+            <input type="radio" value="5" name="group10">
+            <span>Strongly agree</span>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary submit">Submit</button>
     </form>
 
 
 </body>
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        // function getValues(question) {
+        //     for (var i = 0, length = question.length; i < length; i++) {
+        //         if (question[i].checked) {
+        //             console.log(question[i].value);
+        //             question = question[i].value;
+        //             break;
+        //         }
+        //     }
+        // }
+
+
+        var ques1 = document.getElementsByName('group1');
+        // getValues(ques1); 
+        for (var i = 0, length = ques1.length; i < length; i++) {
+            if (ques1[i].checked) {
+                console.log(ques1[i].value);
+                var ques1val = ques1[i].value;
+                break;
+            }
+        }
+
+        var ques2 = document.getElementsByName('group2');
+        // getValues(ques2);
+        for (var i = 0, length = ques2.length; i < length; i++) {
+            if (ques2[i].checked) {
+                console.log(ques2[i].value);
+                var ques2val = ques2[i].value;
+                break;
+            }
+        }
+
+        var ques3 = document.getElementsByName('group3');
+        // getValues(ques3);
+        for (var i = 0, length = ques3.length; i < length; i++) {
+            if (ques3[i].checked) {
+                console.log(ques3[i].value);
+                var ques3val = ques3[i].value;
+                break;
+            }
+        }
+
+        var ques4 = document.getElementsByName('group4');
+        // getValues(ques4);
+        for (var i = 0, length = ques4.length; i < length; i++) {
+            if (ques4[i].checked) {
+                console.log(ques4[i].value);
+                var ques4val = ques4[i].value;
+                break;
+            }
+        }
+
+        var ques5 = document.getElementsByName('group5');
+        // getValues(ques5);
+        for (var i = 0, length = ques5.length; i < length; i++) {
+            if (ques5[i].checked) {
+                console.log(ques5[i].value);
+                var ques5val = ques5[i].value;
+                break;
+            }
+        }
+
+        var ques6 = document.getElementsByName('group6');
+        // getValues(ques6);
+        for (var i = 0, length = ques6.length; i < length; i++) {
+            if (ques6[i].checked) {
+                console.log(ques6[i].value);
+                var ques6val = ques6[i].value;
+                break;
+            }
+        }
+
+        var ques7 = document.getElementsByName('group7');
+        // getValues(ques7);
+        for (var i = 0, length = ques7.length; i < length; i++) {
+            if (ques7[i].checked) {
+                console.log(ques7[i].value);
+                var ques7val = ques7[i].value;
+                break;
+            }
+        }
+
+        var ques8 = document.getElementsByName('group8');
+        // getValues(ques8);
+        for (var i = 0, length = ques8.length; i < length; i++) {
+            if (ques8[i].checked) {
+                console.log(ques8[i].value);
+                var ques8val = ques8[i].value;
+                break;
+            }
+        }
+
+        var ques9 = document.getElementsByName('group9');
+        // getValues(ques9);
+        for (var i = 0, length = ques9.length; i < length; i++) {
+            if (ques9[i].checked) {
+                console.log(ques9[i].value);
+                var ques9val = ques9[i].value;
+                break;
+            }
+        }
+
+        var ques10 = document.getElementsByName('group10');
+        // getValues(ques10);
+        for (var i = 0, length = ques10.length; i < length; i++) {
+            if (ques10[i].checked) {
+                console.log(ques10[i].value);
+                var ques10val = ques10[i].value;
+                break;
+            }
+        }
+
+
+
+        // Here we grab the form elements
+        var testResults = [ques1val, ques2val, ques3val, ques4val, ques5val, ques6val, ques7val, ques8val, ques9val, ques10val];
+        console.log(testResults);
+
+        $.post("/api/userresults", testResults,
+        function(data) {
+
+          if (data) {
+            console.log("Your results have been submitted.");
+          }
+
+        });
+
+    });
+
+</script>
 
 </html>
