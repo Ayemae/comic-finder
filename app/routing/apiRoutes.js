@@ -1,5 +1,4 @@
 var comics = require("../data/comics");
-var users = require("../data/userresults");
 
 module.exports = function (app) {
     // API GET Requests
@@ -7,10 +6,6 @@ module.exports = function (app) {
     // In each of the below cases when a user visits a link
     // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
     // ---------------------------------------------------------------------------
-
-    app.get("/api/users", function (req, res) {
-        res.json(users);
-    });
 
     app.get("/api/comics", function (req, res) {
         res.json(comics);
@@ -34,23 +29,24 @@ module.exports = function (app) {
         // req.body is available since we're using the body-parser middleware
 
         var testAgainstAll = [];
+        // var scoreComp = [];
+        var testResults = req.body.responses;
+        console.log(testResults);
 
         // COMPARISON ALGORITM GOES HERE
         // subtract respective index numbers of the user from the comic's score
-        for (var i =0; i < comics.length; i++) {
+        for (var c = 0; c < comics.length; c++) {
+            var scoreComp = 0;
+            // loops through the scores of every individual comic
+            for (var i = 0; i < testResults.length; i++) {
+                var scoreEval = Math.abs(testResults[i] - comics[c].scores[i]);
+                scoreComp += scoreEval;
+            }
 
-        for (var i = 0; i < testresults.length; i++) {
-            var scoreComp = [];
-            var scoreEval = Math.abs(testresults[i] - comics.score[i]);
-            scoreComp.push(scoreEval);
+            testAgainstAll.push(scoreComp);
+            
         }
-        var scoreCompTotal = scoreComp.reduce(getTotal);
-        function getTotal(total, num) {
-            return total + num;
-        }
-        testAgainstAll.push(scoreCompTotal);
-        console.log(testAgainstAll)}
-
+        console.log(testAgainstAll)
 
 
         // do this for every comic in the data
@@ -62,7 +58,7 @@ module.exports = function (app) {
 
         // Return that comic
 
-
+        res.json();
         console.log("");
     });
 };

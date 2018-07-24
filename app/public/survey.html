@@ -130,7 +130,7 @@
     <div class="popup">
         <span class="popuptext" id="myPopup">
             <p id="outcome-msg"></p>
-            <button id="reset" onclick="popUp()">Okay</button>
+            <button id="reset" onclick="popUp()">This is a button from the pop-up</button>
         </span>
     </div>
 </body>
@@ -254,33 +254,34 @@
 
 
         // Here we grab the form elements
-        var testResults = [ques1val, ques2val, ques3val, ques4val, ques5val, ques6val, ques7val, ques8val, ques9val, ques10val];
-        console.log(testResults);
+        var testResults = {
+         responses: [ques1val, ques2val, ques3val, ques4val, ques5val, ques6val, ques7val, ques8val, ques9val, ques10val]
+        };
+       console.log(testResults);
 
-        // $.post("/api/userresults", testResults,
-        //     function (data) {
-        //         if (data) {
-        //             console.log("Your results have been submitted.");
-        //         }
+        $.post("/api/users", testResults,
+            function (data) {
+                if (data) {
+                    console.log("Your results have been submitted.");
+                    popUp(data);
+                }
+                
+               
+            });
 
-        //     });
-
-        app.post("/api/userresults", (req, res) => {
-            // comparison(req.body, res);
-            console.log("Your results have been submitted.");
-        });
 
         // $.post("/api/comics", message, (data) => {
         //     console.log(data);
         //     // drawModal(data);
         // })
 
-        popUp();
+        
 
 
     });
 
-    function popUp() {
+    function popUp(x) {
+        // x is the results content.  Don't forget to output it.
         var popup = document.getElementById("myPopup");
         popup.classList.toggle("show");
     };
