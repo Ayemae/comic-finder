@@ -32,7 +32,7 @@ var chirault = {
     ]
 }
 
-var DDWG = {
+var ddwg = {
     "title": "Damsels Don't Wear Glasses",
     "url": "http://damsels-dont-wear-glasses.com/",
     "scores" : [
@@ -49,7 +49,7 @@ var DDWG = {
     ]
 }
 
-var HoK = {
+var hok = {
     "title": "Heart of Keol",
     "url": "http://www.heartofkeol.com/",
     "scores" : [

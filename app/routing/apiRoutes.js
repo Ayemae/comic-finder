@@ -37,6 +37,8 @@ module.exports = function (app) {
 
         // COMPARISON ALGORITM GOES HERE
         // subtract respective index numbers of the user from the comic's score
+        for (var i =0; i < comics.length; i++) {
+
         for (var i = 0; i < testresults.length; i++) {
             var scoreComp = [];
             var scoreEval = Math.abs(testresults[i] - comics.score[i]);
@@ -47,8 +49,12 @@ module.exports = function (app) {
             return total + num;
         }
         testAgainstAll.push(scoreCompTotal);
+        console.log(testAgainstAll)}
+
+
 
         // do this for every comic in the data
+
 
         //find smallest value in testAgainstAll. 
         // Find the comic object of the same index value.
