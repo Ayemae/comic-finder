@@ -15,17 +15,33 @@ var comics = [{
     ]
 },
 {
+    "title": "Children of Eldair",
+    "url": "http://www.eldair.com/",
+    "scores" : [
+        1,
+        5,
+        3,
+        4,
+        2,
+        3,
+        3,
+        4,
+        2,
+        3
+    ]
+},
+{
     "title": "Chirault",
     "url": "http://chirault.sevensmith.net/",
     "scores" : [
         1,
-        3,
-        2,
-        3,
-        3,
-        2,
-        3,
         4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        5,
         3,
         3
     ]
@@ -47,6 +63,22 @@ var comics = [{
     ]
 },
 {
+    "title": "The Ferrin",
+    "url": "http://theferrin.com/",
+    "scores" : [
+        3,
+        5,
+        3,
+        3,
+        3,
+        2,
+        3,
+        4,
+        2,
+        1
+    ]
+},
+{
     "title": "Heart of Keol",
     "url": "http://www.heartofkeol.com/",
     "scores" : [
@@ -59,7 +91,7 @@ var comics = [{
         3,
         5,
         3,
-        3
+        2
     ]
 },
 {
@@ -90,13 +122,13 @@ var comics = [{
         2,
         2,
         4,
-        3,
+        1,
         2
     ]
 },
 {
     "title": "Seamus and Abbie",
-    "url": "http://sombulus.com/",
+    "url": "http://seamusandabbie.com/",
     "scores" : [
         2,
         2,
@@ -128,7 +160,7 @@ var comics = [{
 },
 {
     "title": "Soul's Journey",
-    "url": "http://soulsjourney.com/",
+    "url": "http://soulsjourney.gerritianchronicles.com/",
     "scores" : [
         1,
         4,
@@ -156,6 +188,86 @@ var comics = [{
         4,
         2,
         3
+    ]
+},
+{
+    "title": "Sunset Grill",
+    "url": "http://sunsetgrillcomic.com/",
+    "scores" : [
+        2,
+        4,
+        3,
+        2,
+        3,
+        3,
+        5,
+        1,
+        4,
+        4
+    ]
+},
+{
+    "title": "Supervillainous",
+    "url": "http://supervillainous.spiderforest.com/",
+    "scores" : [
+        4,
+        4,
+        4,
+        3,
+        4,
+        3,
+        2,
+        4,
+        2,
+        4
+    ]
+},
+{
+    "title": "Temerity",
+    "url": "http://www.temerity.space/",
+    "scores" : [
+        2,
+        4,
+        4,
+        3,
+        1,
+        5,
+        1,
+        3,
+        4,
+        5
+    ]
+},
+{
+    "title": "Tistow",
+    "url": "https://smalltrolls.tistow.uk/",
+    "scores" : [
+        1,
+        5,
+        3,
+        4,
+        2,
+        3,
+        2,
+        4,
+        1,
+        2
+    ]
+},
+{
+    "title": "XII: Of Magic and Muses",
+    "url": "http://xiicomic.com/",
+    "scores" : [
+        1,
+        3,
+        3,
+        4,
+        5,
+        3,
+        4,
+        5,
+        2,
+        1
     ]
 }]
 

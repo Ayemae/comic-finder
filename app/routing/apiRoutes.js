@@ -1,6 +1,8 @@
 var comics = require("../data/comics");
 
 module.exports = function (app) {
+    
+
     // API GET Requests
     // Below code handles when users "visit" a page.
     // In each of the below cases when a user visits a link
@@ -20,7 +22,7 @@ module.exports = function (app) {
     // ---------------------------------------------------------------------------
 
 
-
+    var testResults = [];
 
 
     app.post("/api/users", function (req, res) {
@@ -30,7 +32,7 @@ module.exports = function (app) {
 
         var testAgainstAll = [];
         // var scoreComp = [];
-        var testResults = req.body.responses;
+        testResults = req.body.responses;
         console.log(testResults);
 
         // COMPARISON ALGORITM GOES HERE
@@ -44,21 +46,45 @@ module.exports = function (app) {
             }
 
             testAgainstAll.push(scoreComp);
-            
+
         }
         console.log(testAgainstAll)
 
 
-        // do this for every comic in the data
+
 
 
         //find smallest value in testAgainstAll. 
+        Array.min = function (array) {
+            return Math.min.apply(Math, array);
+        };
         // Find the comic object of the same index value.
 
+        var minimum = Array.min(testAgainstAll);
+        var indexes = getAllIndexes(testAgainstAll, minimum);
+        //var key = testAgainstAll.indexOf(minimum);
+        var allRecs = getAllRecs();
+        console.log(allRecs)
 
         // Return that comic
+        // console.log(comics[key]);
+        res.json(allRecs);
 
-        res.json();
-        console.log("");
+        function getAllIndexes(arr, val) {
+            var indexes = [], i = -1;
+            while ((i = arr.indexOf(val, i+1)) != -1){
+                indexes.push(i);
+            }
+            return indexes;
+        }
+
+        function getAllRecs () {
+            for (var i = 0; i < indexes.length; i++) {
+                return comics[(indexes[i])];
+            }
+        }
     });
+
+
+
 };

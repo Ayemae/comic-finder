@@ -1,0 +1,122 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #5f4421;
+    font-size: 20px;
+    font-family: 'Futura', Helvetica, Arial, sans-serif;
+    background-color: #eeede5;
+    background-image: url('../images/ricepaper_v3.png');
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Metamorphous', Georgia, Times, serif;
+    font-size: 2.5em;
+    padding: 0 0 15px;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    padding: 12px;
+}
+
+button {
+    border: none;
+    font-size: 1.2em;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: .2em .5em;
+    border-radius: 6px;
+    background-color: #a372b6;
+    outline: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    height: 100px;
+    color: rgb(156, 97, 61);
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+fieldset span {
+    font-size: .8em;
+    margin: 15px;
+}
+
+ .clear {
+     clear:both;
+ }
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 10px 20px;
+    position: relative;
+    bottom: 300px;
+    /* transform: translateY(-150%);
+    transform: translateX(-150%); */
+    z-index: 100;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn .25s;
+    animation: fadeIn .25s
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline;
+    -webkit-animation: fadeIn .25s;
+    animation: fadeIn .25s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

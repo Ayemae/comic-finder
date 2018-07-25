@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/style-reset" />
+    <link rel="stylesheet" type="text/css" href="/style" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <title>Comic Finder</title>
@@ -13,13 +15,14 @@
 <body>
 
 
+    <div class="container">
     <form>
         <fieldset id="ques1">
             <p>1. I prefer one-off comic strips to continuous stories.</p>
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group1">
             <input type="radio" value="2" name="group1">
-            <input type="radio" value="3" name="group1" checked="checked">
+            <input type="radio" value="3" name="group1">
             <input type="radio" value="4" name="group1">
             <input type="radio" value="5" name="group1">
             <span>Strongly agree</span>
@@ -30,7 +33,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group2">
             <input type="radio" value="2" name="group2">
-            <input type="radio" value="3" name="group2" checked="checked">
+            <input type="radio" value="3" name="group2">
             <input type="radio" value="4" name="group2">
             <input type="radio" value="5" name="group2">
             <span>Strongly agree</span>
@@ -41,7 +44,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group3">
             <input type="radio" value="2" name="group3">
-            <input type="radio" value="3" name="group3" checked="checked">
+            <input type="radio" value="3" name="group3">
             <input type="radio" value="4" name="group3">
             <input type="radio" value="5" name="group3">
             <span>Strongly agree</span>
@@ -52,7 +55,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group4">
             <input type="radio" value="2" name="group4">
-            <input type="radio" value="3" name="group4" checked="checked">
+            <input type="radio" value="3" name="group4">
             <input type="radio" value="4" name="group4">
             <input type="radio" value="5" name="group4">
             <span>Strongly agree</span>
@@ -63,7 +66,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group5">
             <input type="radio" value="2" name="group5">
-            <input type="radio" value="3" name="group5" checked="checked">
+            <input type="radio" value="3" name="group5">
             <input type="radio" value="4" name="group5">
             <input type="radio" value="5" name="group5">
             <span>Strongly agree</span>
@@ -74,7 +77,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group6">
             <input type="radio" value="2" name="group6">
-            <input type="radio" value="3" name="group6" checked="checked">
+            <input type="radio" value="3" name="group6">
             <input type="radio" value="4" name="group6">
             <input type="radio" value="5" name="group6">
             <span>Strongly agree</span>
@@ -85,7 +88,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group7">
             <input type="radio" value="2" name="group7">
-            <input type="radio" value="3" name="group7" checked="checked">
+            <input type="radio" value="3" name="group7">
             <input type="radio" value="4" name="group7">
             <input type="radio" value="5" name="group7">
             <span>Strongly agree</span>
@@ -96,7 +99,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group8">
             <input type="radio" value="2" name="group8">
-            <input type="radio" value="3" name="group8" checked="checked">
+            <input type="radio" value="3" name="group8">
             <input type="radio" value="4" name="group8">
             <input type="radio" value="5" name="group8">
             <span>Strongly agree</span>
@@ -107,7 +110,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group9">
             <input type="radio" value="2" name="group9">
-            <input type="radio" value="3" name="group9" checked="checked">
+            <input type="radio" value="3" name="group9">
             <input type="radio" value="4" name="group9">
             <input type="radio" value="5" name="group9">
             <span>Strongly agree</span>
@@ -118,7 +121,7 @@
             <span>Strongly disagree</span>
             <input type="radio" value="1" name="group10">
             <input type="radio" value="2" name="group10">
-            <input type="radio" value="3" name="group10" checked="checked">
+            <input type="radio" value="3" name="group10">
             <input type="radio" value="4" name="group10">
             <input type="radio" value="5" name="group10">
             <span>Strongly agree</span>
@@ -126,11 +129,12 @@
 
         <button type="submit" class="btn btn-primary submit">Submit</button>
     </form>
+</div>
 
     <div class="popup">
         <span class="popuptext" id="myPopup">
-            <p id="outcome-msg"></p>
-            <button id="reset" onclick="popUp()">This is a button from the pop-up</button>
+            <span id="results"></span><br/>
+            <button onclick="popUp()">Okay!</button>
         </span>
     </div>
 </body>
@@ -255,36 +259,42 @@
 
         // Here we grab the form elements
         var testResults = {
-         responses: [ques1val, ques2val, ques3val, ques4val, ques5val, ques6val, ques7val, ques8val, ques9val, ques10val]
+            responses: [ques1val, ques2val, ques3val, ques4val, ques5val, ques6val, ques7val, ques8val, ques9val, ques10val]
         };
-       console.log(testResults);
+        console.log(testResults);
+
+        var popHTML = `<ul>`
 
         $.post("/api/users", testResults,
             function (data) {
                 if (data) {
                     console.log("Your results have been submitted.");
-                    popUp(data);
-                }
-                
-               
-            });
+
+                    // printAllRecs(data);
+                    var resultHTML = `Check out:<br/><a href="${data.url}" target="_blank"> ${data.title}`;
+                    popUp(resultHTML);
+                    console.log(data.title)
 
 
-        // $.post("/api/comics", message, (data) => {
-        //     console.log(data);
-        //     // drawModal(data);
-        // })
+                    // function printAllRecs(recArr) {
+                    //     for (var i = 0; i < recArr.length; i++) {
+                    //         popHTML += `<li><a href="${recArr[i].url}"> ${recArr[i].title}</li>`;
+                    //     }
+                    //     popHTML += `</ul>`
+                    //     return popHTML;
+                    // }
 
-        
+                } 
+            }); // end post
 
 
     });
 
     function popUp(x) {
-        // x is the results content.  Don't forget to output it.
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-    };
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+            $("#results").html(x)
+        };
 
 </script>
 
